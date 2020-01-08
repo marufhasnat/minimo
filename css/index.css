@@ -1,0 +1,278 @@
+/*font-family: 'Playfair Display', serif;*/
+/*font-family: 'Ubuntu', sans-serif;*/
+/*font-family: 'Inconsolata', monospace;*/
+
+
+
+*{
+	margin: 0;
+	padding: 0;
+}
+body{
+	font-family: 'Playfair Display', serif;
+	color: rgb(98, 98, 98);
+}
+
+/*header start*/
+header{
+	padding: 30px 0;
+	/*border: 2px solid black;*/
+}
+.wrapper{
+	overflow: hidden;
+	width: 90%;
+	margin: 0 auto;
+	/*border: 2px solid red;*/
+}
+.logo{
+	width: 15%;
+	/*border: 2px solid yellow;*/
+	float: left;
+}
+.logo img{
+	width: 100%;
+}
+.menu{
+	width: 70%;
+	/*border: 2px solid yellow;*/
+	float: right;
+	margin-top: 10px;
+}
+.menu ul{
+	float: right;
+	list-style-type: none;
+	-webkit-transform: translate(0%,-50%);
+}
+.menu ul li{
+	float: left;
+}
+.menu ul li a{
+	color: rgb(98, 98, 98); 
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 0 55px;
+	display: block;
+}
+.menu ul li a::after {
+    content: '';
+    display: block;
+    width:0;
+    height: 1px;
+    background: #000;
+	color :#000000;
+	transition: 0.5s;
+}
+
+.menu ul li a:hover::after {
+    width: 100%;
+
+}
+.menu ul li:last-child a{
+	padding-right: 0;
+} 
+/*header end*/
+
+
+/*banner start*/
+.banner{
+	
+}
+.b_img{
+	/*border: 2px solid green;*/
+}
+.b_img img{
+	width: 100%;
+}
+/*banner end*/
+
+
+/*getway start*/
+.getway{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.wrapper2{
+	width: 80%;
+	/*border: 2px solid red;*/
+	margin: 0 auto;
+	overflow: hidden;
+}
+.g_content{}
+.light{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	font-size: 14px;
+	color: rgb(180, 173, 158);
+	text-transform: uppercase;
+}
+.c_title{
+	font-weight: 400;
+	font-size: 30px;
+	margin-top: 20px;
+	margin-bottom: 30px;
+}
+.c_text{
+	line-height: 28px; 
+	word-spacing: 3px;
+	margin-bottom: 45px;
+}
+/*getway end*/
+
+
+/*blog start*/
+.blog{
+	padding-top: 50px;
+	padding-bottom: 50px;
+}
+.single{
+	width: 47%;
+	/*border: 1px solid black;*/
+	float: left;
+}
+.single:nth-child(even){
+	margin-left: 6%;
+}
+.single img{
+	width: 100%;
+	margin-bottom: 20px;
+}
+/*blog end*/
+
+
+/*newsletter start*/
+.newsletter{
+	padding: 50px 0;
+	background-color: rgb(240, 240, 240);
+}
+.wrapper3{
+	width: 60%;
+	margin: 0 auto;
+}
+.signup{
+	text-align: center;
+}
+.signup h1{
+	font-size: 30px;
+	margin-bottom: 100px;
+}
+.for_form{
+	width: 350px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	position: relative;
+}
+.for_form input{
+	border: none;
+	background: transparent;
+	border-bottom: 1px solid black;
+	width: 290px;
+	font-size: 18px;
+	padding: 10px 50px 10px 10px;
+	outline: none;
+}
+.for_form button{
+	border: none;
+	background: transparent;
+	position: absolute;
+	top: 10px;
+	right: 0px;
+}
+/*newsletter end*/
+
+
+/*blog2 start*/
+.blog2{
+	padding-top: 100px;
+	padding-bottom: 50px;
+}
+/*blog2 end*/
+
+
+/*button start*/
+.button{
+	padding-top: 100px;
+	padding-bottom: 200px;
+}
+.button button{
+	font-size:20px;
+	color:#626262;
+	background-color:white;
+	margin-left: 42%;
+    padding:15px 40px;
+	border: 1px solid black;
+	cursor: pointer;
+	transition:0.6s;
+}
+.button button:hover {
+  background-color: black;
+  color: white;
+}
+/*button end*/
+
+
+/*footer start*/
+footer{
+	background-color: rgb(240, 240, 240);
+	padding: 50px 0;
+}
+.wrapper4{
+	width: 80%;
+	/*border: 1px solid black;*/
+	margin: 0 auto;
+	overflow: hidden; 
+}
+.f_left{
+	width: 30%;
+	float: left;
+	/*border: 1px solid red;*/
+}
+.f_left ul{
+	list-style-type: none;
+	-webkit-transform: translate(0%,-50%);
+}
+.f_left ul li{
+	float: left;
+}
+.f_left ul li a{
+	color: rgb(0, 0, 0); 
+	text-decoration: none;
+	padding: 0 25px;
+	display: block;
+}
+.f_left ul li a::after {
+    content: '';
+    display: block;
+    width:0;
+    height: 1px;
+    background: #000;
+	color :#000000;
+	transition: 0.5s;
+}
+
+.f_left ul li a:hover::after {
+    width: 100%;
+}
+.f_right{
+	width: 30%;
+	float: right;
+	/*border: 1px solid red;*/
+	overflow: hidden;
+}
+.f_right ul{
+	float: right;
+	list-style-type: none;
+}
+.f_right ul li{
+	float: left;
+}
+.f_right ul li a{
+	color: rgb(0, 0, 0); 
+	text-decoration: none;
+	padding: 0 25px;
+	display: block;
+}
+.f_right img{
+	padding-right: 10px;
+}
+/*footer end*/
